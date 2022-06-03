@@ -67,7 +67,8 @@ def products():
 
 @app.route('/author')
 def author():
-    pass
+    return render_template("author.html.jinja")
+
 
 @app.route('/product/<product_id>')
 def product(product_id):
